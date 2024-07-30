@@ -12,7 +12,7 @@ export default {
         grayColor: "#969696",
         bgColor: "#121212",
         orange: "#E93C00",
-        green: "28CD41",
+        green: "#28CD41",
       },
     },
   },

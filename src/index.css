@@ -8,8 +8,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    @apply font-recursive
 }
 
 body{
     background-color:black;
+}
+.container{
+    max-width: 1030px;
+}
+.tile{
+    @apply bg-bgColor p-6 max-w-[282px] min-h-[260px] border-solid border-2 border-borderColor rounded-2xl
 }
