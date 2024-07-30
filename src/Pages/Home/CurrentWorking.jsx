@@ -6,10 +6,10 @@ const CurrentWorking = () => {
       <h3 className='text-grayColor'>
         Currently: <span className='text-white font-semibold'>Designing</span>
       </h3>
-      <div className='flex flex-col items-start'>
-    <div className='bg-green rounded-xl p-3 flex items-center justify-center'><img src="/images/working.svg" alt="Working" /></div>
-        
-        <p className='text-white'>Our devs are working on <span>Medidrop</span></p>
+      <div className='flex flex-col items-start gap-6 '>
+        <div className='bg-green rounded-xl p-3 flex items-center justify-center'><img src="/images/working.svg" alt="Working" /></div>
+
+        <p className='text-white'>Our devs are working on <span className='text-green'>Medidrop</span></p>
       </div>
     </div>
   )

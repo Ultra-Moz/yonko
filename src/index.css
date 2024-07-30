@@ -18,5 +18,12 @@ body{
     max-width: 1030px;
 }
 .tile{
-    @apply bg-bgColor p-6 max-w-[282px] min-h-[260px] border-solid border-2 border-borderColor rounded-2xl
+    @apply bg-bgColor p-6 max-w-[330px] min-h-[260px] border-solid border-2 border-borderColor rounded-2xl
+}
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+.hide-scroll {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
 }
