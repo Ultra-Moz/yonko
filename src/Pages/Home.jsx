@@ -1,7 +1,10 @@
 import React from "react";
+import NameSection from "./Home/NameSection"
 
 const Home = () => {
-  return <div>Home</div>;
+  return <>
+  <NameSection/>
+  </>;
 };
 
 export default Home;
