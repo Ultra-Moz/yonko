@@ -27,3 +27,27 @@ body{
     -ms-overflow-style: none;  
     scrollbar-width: none;
 }
+.svg-icon {
+    filter: brightness(0) invert(1); 
+    transition: filter 0.3s ease;
+  }
+
+  .image-wrapper:hover .svg-icon {
+    filter: brightness(0); 
+  }
+
+  .image-wrapper {
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    background-color: #1F1F1F; 
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+
+  .image-wrapper:hover {
+    background-color: white;
+    transition:all 0.3s ease
+  }

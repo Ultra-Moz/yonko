@@ -2,7 +2,7 @@ import React from 'react'
 
 const CurrentWorking = () => {
   return (
-    <div className='tile flex flex-col items-start justify-between'>
+    <div className='tile flex flex-col items-start justify-between '>
       <h3 className='text-grayColor'>
         Currently: <span className='text-white font-semibold'>Designing</span>
       </h3>

@@ -5,7 +5,7 @@ const Deck = () => {
 const skills = ["Figma", "Node.js", "MySQL", "Swift UI", "Framer", "React", "Tailwind CSS"]
 
   return (
-    <div className='tile flex flex-col items-start justify-between'>
+    <div className='tile flex flex-col items-start justify-between self-start'>
       <h3 className='text-grayColor'>Our Deck:</h3>
       <div className='flex flex-wrap gap-2'>
         {skills.map((skill,index)=>{

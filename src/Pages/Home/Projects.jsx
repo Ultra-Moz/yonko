@@ -3,7 +3,7 @@ import projectsData from "../../../public/data/projects.json"
 
 const Projects = () => {
     return (
-        <div className='tile'>
+        <div className='tile row-span-2'>
             <h3 className='text-grayColor'>Projects:</h3>
             <div className='mt-6 flex flex-col justify-end items-start gap-6 max-h-[440px] overflow-scroll hide-scroll'>
                 {projectsData.map((projectData, index) => {
