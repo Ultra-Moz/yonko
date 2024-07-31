@@ -1,31 +1,42 @@
-import React from 'react'
-
+import React, { useState } from "react";
+import homeData from "../../data/home.json";
 const Socials = () => {
+  const [social, setSocial] = useState("karthikdeshmukh35");
+  //improve discord link, name and hovers
+  const handleClick = (name) => {
+    if (name === "discord") {
+      setSocial("yonko_kd");
+    }
+  };
   return (
-    <div className='tile flex flex-col justify-between'>
-      <h3 className='text-grayColor'>Socials:</h3>
-      <div className='flex flex-col gap-6'>
-        <p className='text-white'>karthikdeshmukh35<span className='text-grayColor'>@gmail.com</span></p>
-        <div className='flex justify-between'>
-            <div className=' image-wrapper '>
-                <a href="/"><img src="/images/icons/twitter.svg" alt="Twitter" className='svg-icon'/></a>
-            </div>
-            <div className='image-wrapper '>
-                <a href="/"><img src="/images/icons/youtube.svg" className='svg-icon' alt="Youtube" /></a>
-            </div>
-            <div className='image-wrapper'>
-                <a href="/"><img src="/images/icons/instagram.svg" className='svg-icon' alt="Instagram" /></a>
-            </div>
-            <div className='image-wrapper '>
-                <a href="/"><img src="/images/icons/dribble.svg" className='svg-icon' alt="Dribble" /></a>
-            </div>
-            <div className='image-wrapper '>
-                <a href="/"><img src="/images/icons/discord.svg" className='svg-icon' alt="Discord" /></a>
-            </div>
+    <div className="tile flex flex-col justify-between">
+      <h3 className="text-grayColor">Socials:</h3>
+      <div className="flex flex-col gap-6">
+        <p className="text-white">
+          karthikdeshmukh35<span className="text-grayColor">@gmail.com</span>
+        </p>
+        <div className="flex justify-between">
+          {homeData.socials.map((social, index) => {
+            return (
+              <div
+                className="image-wrapper"
+                onClick={() => handleClick(social.name)}
+                key={index}
+              >
+                <a href={social.link}>
+                  <img
+                    src={social.image}
+                    className="svg-icon"
+                    alt={social.name}
+                  />
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Socials
+export default Socials;
