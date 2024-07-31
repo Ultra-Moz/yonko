@@ -1,38 +1,50 @@
 import React, { useState } from "react";
-import homeData from "../../data/home.json";
+import homeData from "../../data/home.js";
+
+
 const Socials = () => {
-  const [social, setSocial] = useState("karthikdeshmukh35");
-  //improve discord link, name and hovers
+  const [socialName, setSocialName] = useState("");
+  const [hoverSocial, setHoverSocial] = useState("")
+
   const handleClick = (name) => {
-    if (name === "discord") {
-      setSocial("yonko_kd");
+    if (socialName === 'yonko_kd'){
+      setSocialName("")
+    } else if(name === "discord"){
+      setSocialName("yonko_kd");
     }
   };
+
+  const handleHover = (name) => {
+    if(hoverSocial === 'yonko_kd' && name === "discord"){
+      setHoverSocial("")
+    } else if(name === "discord"){
+      setHoverSocial("yonko_kd")
+    }
+  }
+
   return (
     <div className="tile flex flex-col justify-between">
       <h3 className="text-grayColor">Socials:</h3>
       <div className="flex flex-col gap-6">
         <p className="text-white">
-          karthikdeshmukh35<span className="text-grayColor">@gmail.com</span>
+          {socialName || hoverSocial ? "yonko_kd" : "kartikhdeshmukh"}<span className="text-grayColor">{socialName || hoverSocial ? "" : "@gmail.com"}</span>
         </p>
         <div className="flex justify-between">
-          {homeData.socials.map((social, index) => {
-            return (
-              <div
-                className="image-wrapper"
-                onClick={() => handleClick(social.name)}
-                key={index}
-              >
-                <a href={social.link}>
-                  <img
-                    src={social.image}
-                    className="svg-icon"
-                    alt={social.name}
-                  />
-                </a>
-              </div>
-            );
-          })}
+          {homeData.socials.map((social, index) => (
+            social.link ? (
+              <a key={index} href={social.link} target="_blank" rel="noopener noreferrer">
+                <div className="image-wrapper text-white hover:text-black  transition-all duration-300 ease-in-out" >
+                  <social.image/>
+                </div>
+              </a>
+            ) : (
+              <span key={index}>
+                <div className={`image-wrapper hover:text-black transition-all active:opacity-50 duration-300 ease-in-out ${(socialName || hoverSocial) ? "text-black !bg-white" : "text-white "}`} onMouseLeave={()=> handleHover(social.name.toLowerCase())} onMouseEnter={()=> handleHover(social.name.toLowerCase())} onClick={() => handleClick(social.name.toLowerCase())}>
+                  <social.image/>
+                </div>
+              </span>
+            )
+          ))}
         </div>
       </div>
     </div>

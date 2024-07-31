@@ -1,11 +1,11 @@
 import React from "react";
-import homeData from "../../data/home.json";
+import homeData from "../../data/home.js";
 
 const Deck = () => {
   return (
     <div className="tile flex flex-col items-start justify-between self-start">
       <h3 className="text-grayColor">Our Deck:</h3>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-2 overflow-y-scroll max-h-[150px] hide-scroll">
         {homeData.skills.map((skill, index) => {
           return (
             <div

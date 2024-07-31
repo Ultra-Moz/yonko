@@ -1,11 +1,11 @@
 import React from "react";
-import homeData from "../../data/home.json";
+import homeData from "../../data/home.js";
 
 const Projects = () => {
   return (
     <div className="tile row-span-2">
       <h3 className="text-grayColor">Projects:</h3>
-      <div className="mt-6 flex flex-col overflow-y-scroll hide-scroll items-start gap-6 max-h-[440px]">
+      <div className="mt-4 flex flex-col overflow-y-scroll hide-scroll items-start gap-6 max-h-[425px]">
         {homeData.projects.map((projectData, index) => {
           return (
             <div key={index}>

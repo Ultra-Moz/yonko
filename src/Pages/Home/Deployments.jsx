@@ -1,5 +1,5 @@
 import React from "react";
-import homeData from "../../data/home.json";
+import homeData from "../../data/home.js";
 
 const Deployments = () => {
   return (

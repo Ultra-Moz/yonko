@@ -27,14 +27,7 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.svg-icon {
-  filter: brightness(0) invert(1);
-  transition: filter 0.3s ease;
-}
 
-.image-wrapper:hover .svg-icon {
-  filter: brightness(0);
-}
 
 .image-wrapper {
   width: 48px;
