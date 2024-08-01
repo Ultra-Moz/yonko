@@ -1,8 +1,8 @@
-import Twitter from "../../public/images/icons/Twitter"
-import Youtube from "../../public/images/icons/Youtube"
-import Instagram from "../../public/images/icons/Instagram"
-import Dribble from "../../public/images/icons/Dribble"
-import Discord from "../../public/images/icons/Discord"
+import Twitter from "../../public/images/icons/Twitter";
+import Youtube from "../../public/images/icons/Youtube";
+import Instagram from "../../public/images/icons/Instagram";
+import Dribble from "../../public/images/icons/Dribble";
+import Discord from "../../public/images/icons/Discord";
 
 const homeData = {
   deployments: 14,
@@ -13,7 +13,18 @@ const homeData = {
     imgColor: "#28CD41",
     textColor: "#28CD41",
   },
-  skills: ["Figma", "Node.js", "MySQL", "Swift UI", "Framer", "React", "Tailwind CSS"],
+  skills: [
+    "Figma",
+    "Node.js",
+    "MySQL",
+    "Swift UI",
+    "Framer",
+    "React",
+    "Tailwind CSS",
+    "Tailwind CSS",
+    "Tailwind CSS",
+    "Tailwind CSS",
+  ],
   projects: [
     {
       name: "Medidrop",
@@ -95,14 +106,16 @@ const homeData = {
       name: "Mishra Lalvani",
       image: "/images/person1.png",
       title: "CEO - Busease",
-      review: "“Brutanix Studios transformed our platform with their incredible design and development skills. Their attention to detail and creativity are unmatched. Highly recommend!”",
+      review:
+        "“Brutanix Studios transformed our platform with their incredible design and development skills. Their attention to detail and creativity are unmatched. Highly recommend!”",
     },
     {
       name: "Yash Reddy",
       image: "/images/person2.png",
       title: "CEO - Busease",
-      review: "“Brutanix Studios transformed our platform with their incredible design and development skills. Their attention to detail and creativity are unmatched. Highly recommend!”",
-    }
+      review:
+        "“Brutanix Studios transformed our platform with their incredible design and development skills. Their attention to detail and creativity are unmatched. Highly recommend!”",
+    },
   ],
   socials: [
     {
@@ -112,25 +125,24 @@ const homeData = {
     },
     {
       name: "Youtube",
-      image:  Youtube ,
+      image: Youtube,
       link: "https://www.youtube.com/@HarlockUlric",
     },
     {
       name: "Instagram",
-      image:  Instagram ,
+      image: Instagram,
       link: "https://www.instagram.com/deshmukh_03/",
     },
     {
       name: "Dribble",
-      image:  Dribble  ,
+      image: Dribble,
       link: "https://dribbble.com/Deshmukh_03",
     },
     {
       name: "Discord",
-      image:  Discord ,
+      image: Discord,
       link: "",
     },
   ],
 };
-  export default homeData;
-  
+export default homeData;
