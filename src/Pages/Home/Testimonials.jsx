@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import homeData from "../../data/home.js";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import "@splidejs/react-splide/css/core";
+import { HoverContext } from "../../HoverContext.jsx";
 
 const Testimonials = () => {
+  const { setIsHovered, setIsTextHovered } = useContext(HoverContext);
+
   const [activeIndex, setActiveIndex] = useState(0);
   const [personName, setPersonName] = useState(homeData.testimonials[0]?.name || "");
 
@@ -16,7 +19,8 @@ const Testimonials = () => {
 
   return (
     <div className="bg-bgColor max-w-[680px] flex flex-col gap-8 w-full p-6 min-h-[260px] border-solid border-2 border-borderColor rounded-2xl col-span-2">
-      <h3 className="text-grayColor">
+      <h3 className="text-grayColor" onMouseEnter={() => setIsTextHovered(true)}
+        onMouseLeave={() => setIsTextHovered(false)}>
         Testimonials:{" "}
         <span className="text-white font-semibold">{personName}</span>
       </h3>

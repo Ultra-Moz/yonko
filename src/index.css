@@ -22,13 +22,22 @@ body {
   border-radius: 50%;
   position: fixed;
   top: 0;
-  bottom: 0;
+  left: 0;
   pointer-events: none;
   z-index: 1;
+  transform: translate(-50%, -50%);
+  transition: all 0.2s ease-in-out;
 }
 
 .cursor-dot.hovered {
-  background-color: black;
+  opacity:0
+}
+.cursor-dot.text-hovered{
+  width: 3px;
+  height:40px;
+  border-radius:0px;
+  transform-origin: center; 
+  transition: all 0.2s ease-in-out;
 }
 
 .container {
@@ -59,15 +68,6 @@ body {
 .image-wrapper:hover {
   background-color: white;
   transition: all 0.3s ease;
-}
-.service-img-holder:hover .rotate45 {
-  transform: rotate(45deg);
-}
-.service-img-holder:hover .rotate90 {
-  transform: rotate(90deg);
-}
-.service-img-holder:hover .rotate180 {
-  transform: rotate(180deg);
 }
 #splide01-track {
   overflow: visible !important;

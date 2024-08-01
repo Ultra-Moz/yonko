@@ -1,12 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { HoverContext } from "../../HoverContext.jsx";
 
 const BasedIn = () => {
+
+  const { setIsHovered, setIsTextHovered } = useContext(HoverContext);
+
+
   const [time, setTime] = useState(new Date());
 
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(new Date());
-    }, 1000); // Update every second
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
@@ -37,13 +42,17 @@ const BasedIn = () => {
 
   return (
     <div className='tile flex flex-col justify-between'>
-      <h3 className='text-grayColor'>Based In:</h3>
+      <h3 className='text-grayColor' onMouseEnter={() => setIsTextHovered(true)}
+        onMouseLeave={() => setIsTextHovered(false)}>Based In:</h3>
       <div className='flex justify-between'>
         <div className='flex flex-col'>
-          <span className='text-white font-semibold'>Hyd, IND <span className='text-orange'>•</span> IST</span>
-          <span className='text-grayColor'>{formatDate(time)}</span>
-          <span className='text-white mt-6'>
-            {hours}:{minutes}:<span className='text-orange'>{seconds}</span> {period}
+          <span className='text-white font-semibold' onMouseEnter={() => setIsTextHovered(true)}
+            onMouseLeave={() => setIsTextHovered(false)}>Hyd, IND <span className='text-orange'>•</span> IST</span>
+          <span className='text-grayColor' onMouseEnter={() => setIsTextHovered(true)}
+            onMouseLeave={() => setIsTextHovered(false)}>{formatDate(time)}</span>
+          <span className='text-white mt-6' onMouseEnter={() => setIsTextHovered(true)}
+            onMouseLeave={() => setIsTextHovered(false)}>
+            {hours}:{minutes}:<span className='text-orange' >{seconds}</span> {period}
           </span>
         </div>
         <img src="/images/map.svg" alt="Telengana state map" />
