@@ -8,12 +8,29 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  cursor: none !important;
   @apply font-recursive;
 }
 
 body {
   background-color: black;
 }
+.cursor-dot {
+  width: 20px;
+  height: 20px;
+  background-color: #e93c00;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.cursor-dot.hovered {
+  background-color: black;
+}
+
 .container {
   max-width: 1030px;
 }
@@ -27,7 +44,6 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
 
 .image-wrapper {
   width: 48px;

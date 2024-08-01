@@ -3,6 +3,12 @@ import Youtube from "../../public/images/icons/Youtube";
 import Instagram from "../../public/images/icons/Instagram";
 import Dribble from "../../public/images/icons/Dribble";
 import Discord from "../../public/images/icons/Discord";
+import AppDevelopment from "../../public/images/AppDevelopment";
+import BrandIdentity from "../../public/images/BrandIdentity";
+import LogoDesign from "../../public/images/LogoDesign";
+import MediaMarketing from "../../public/images/MediaMarketing";
+import ProductDesign from "../../public/images/ProductDesign";
+import WebDevelopment from "../../public/images/WebDevelopment";
 
 const homeData = {
   deployments: 14,
@@ -20,9 +26,6 @@ const homeData = {
     "Swift UI",
     "Framer",
     "React",
-    "Tailwind CSS",
-    "Tailwind CSS",
-    "Tailwind CSS",
     "Tailwind CSS",
   ],
   projects: [
@@ -59,46 +62,40 @@ const homeData = {
   ],
   services: [
     {
-      image: "/images/brand-identity.svg",
+      image: BrandIdentity,
       name: "Brand Identity",
       description: "Crafting identities with personality",
       alt: "Brand identity logo",
-      rotateOnHover: "rotate180",
     },
     {
-      image: "/images/logo-design.svg",
+      image: LogoDesign,
       name: "Logo Design",
       description: "Creating Iconic Symbols",
       alt: "Logo design",
-      rotateOnHover: "rotate90",
     },
     {
-      image: "/images/media-marketing.svg",
+      image: MediaMarketing,
       name: "Media Marketing",
       description: "Making your feed fabulous",
       alt: "Media Marketing logo",
-      rotateOnHover: "rotate45",
     },
     {
-      image: "/images/web-development.svg",
+      image: WebDevelopment,
       name: "Web Development",
       description: "Turning clicks into smiles",
       alt: "Web development logo",
-      rotateOnHover: "rotate180",
     },
     {
-      image: "/images/product-design.svg",
+      image: ProductDesign,
       name: "Product Design",
       description: "Innovating one product at a time",
       alt: "Product design logo",
-      rotateOnHover: "rotate90",
     },
     {
-      image: "/images/app-development.svg",
+      image: AppDevelopment,
       name: "App Development",
       description: "Making apps that make life better",
       alt: "App development",
-      rotateOnHover: "rotate45",
     },
   ],
   testimonials: [
