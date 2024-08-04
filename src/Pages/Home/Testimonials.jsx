@@ -9,18 +9,23 @@ const Testimonials = () => {
   const { setIsHovered, setIsTextHovered } = useContext(HoverContext);
 
   const [activeIndex, setActiveIndex] = useState(0);
-  const [personName, setPersonName] = useState(homeData.testimonials[0]?.name || "");
+  const [personName, setPersonName] = useState(
+    homeData.testimonials[0]?.name || ""
+  );
 
   const handleSlideChange = (splide) => {
-    console.log(splide.index)
+    console.log(splide.index);
     setActiveIndex(splide.index);
     setPersonName(homeData.testimonials[splide.index]?.name || "");
   };
 
   return (
     <div className="bg-bgColor max-w-[680px] flex flex-col gap-8 w-full p-6 min-h-[260px] border-solid border-2 border-borderColor rounded-2xl col-span-2">
-      <h3 className="text-grayColor" onMouseEnter={() => setIsTextHovered(true)}
-        onMouseLeave={() => setIsTextHovered(false)}>
+      <h3
+        className="text-grayColor self-start"
+        onMouseEnter={() => setIsTextHovered(true)}
+        onMouseLeave={() => setIsTextHovered(false)}
+      >
         Testimonials:{" "}
         <span className="text-white font-semibold">{personName}</span>
       </h3>
@@ -47,12 +52,22 @@ const Testimonials = () => {
                   <img
                     src={testimonial.image}
                     alt="person"
-                    className={`w-[48px] rounded-xl ${activeIndex === index ? "" : "opacity-60"}`}
+                    className={`w-[48px] rounded-xl ${
+                      activeIndex === index ? "" : "opacity-60"
+                    }`}
                   />
-                  <span className={`font-semibold ${activeIndex === index ? "text-white" : "text-grayColor"}`}>
+                  <span
+                    className={`font-semibold ${
+                      activeIndex === index ? "text-white" : "text-grayColor"
+                    }`}
+                  >
                     {testimonial.title}
                   </span>
-                  <p className={`italic text-sm max-w-[400px] ${activeIndex === index ? "text-white" : "text-grayColor"}`}>
+                  <p
+                    className={`italic text-sm max-w-[400px] ${
+                      activeIndex === index ? "text-white" : "text-grayColor"
+                    }`}
+                  >
                     {testimonial.review}
                   </p>
                 </div>

@@ -3,12 +3,12 @@ import Youtube from "../../public/images/icons/Youtube";
 import Instagram from "../../public/images/icons/Instagram";
 import Dribble from "../../public/images/icons/Dribble";
 import Discord from "../../public/images/icons/Discord";
-import AppDevelopment from "../../public/images/AppDevelopment";
-import BrandIdentity from "../../public/images/BrandIdentity";
-import LogoDesign from "../../public/images/LogoDesign";
-import MediaMarketing from "../../public/images/MediaMarketing";
-import ProductDesign from "../../public/images/ProductDesign";
-import WebDevelopment from "../../public/images/WebDevelopment";
+import AppDevelopment from "../components/icons/AppDevelopment";
+import BrandIdentity from "../components/icons/BrandIdentity";
+import LogoDesign from "../components/icons/LogoDesign";
+import MediaMarketing from "../components/icons/MediaMarketing";
+import ProductDesign from "../components/icons/ProductDesign";
+import WebDevelopment from "../components/icons/WebDevelopment";
 
 const homeData = {
   deployments: 14,
@@ -65,37 +65,37 @@ const homeData = {
       image: BrandIdentity,
       name: "Brand Identity",
       description: "Crafting identities with personality",
-      alt: "Brand identity logo",
+      color: "#d6cc99",
     },
     {
       image: LogoDesign,
       name: "Logo Design",
       description: "Creating Iconic Symbols",
-      alt: "Logo design",
+      color: "#21C063",
     },
     {
       image: MediaMarketing,
       name: "Media Marketing",
       description: "Making your feed fabulous",
-      alt: "Media Marketing logo",
+      color: "#E93C00",
     },
     {
       image: WebDevelopment,
       name: "Web Development",
       description: "Turning clicks into smiles",
-      alt: "Web development logo",
+      color: "#16AEF9",
     },
     {
       image: ProductDesign,
       name: "Product Design",
       description: "Innovating one product at a time",
-      alt: "Product design logo",
+      color: "#FA6DCA",
     },
     {
       image: AppDevelopment,
       name: "App Development",
       description: "Making apps that make life better",
-      alt: "App development",
+      color: "#6366F1",
     },
   ],
   testimonials: [

@@ -30,13 +30,13 @@ body {
 }
 
 .cursor-dot.hovered {
-  opacity:0
+  opacity: 0;
 }
-.cursor-dot.text-hovered{
+.cursor-dot.text-hovered {
   width: 3px;
-  height:40px;
-  border-radius:0px;
-  transform-origin: center; 
+  height: 40px;
+  border-radius: 0px;
+  transform-origin: center;
   transition: all 0.2s ease-in-out;
 }
 
@@ -71,4 +71,8 @@ body {
 }
 #splide01-track {
   overflow: visible !important;
+}
+
+.service-group:hover .service-group-icon {
+  background-color: var(--color);
 }

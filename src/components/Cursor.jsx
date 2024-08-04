@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import { HoverContext } from "../HoverContext";
 
-const   Cursor = () => {
+const Cursor = () => {
   const { isHovered, isTextHovered } = useContext(HoverContext);
 
   useEffect(() => {
@@ -13,7 +13,7 @@ const   Cursor = () => {
 
       cursorDot.animate(
         {
-          transform: `translate(${posX }px, ${posY}px) translate(-50%, -50%)`,
+          transform: `translate(${posX}px, ${posY}px) translate(-50%, -50%)`,
         },
         { duration: 200, fill: "forwards" }
       );
@@ -26,7 +26,13 @@ const   Cursor = () => {
     };
   }, []);
 
-  return <div className={`cursor-dot ${isHovered ? "hovered" : ""} ${isTextHovered ? "text-hovered" : ""}`}></div>;
+  return (
+    <div
+      className={`cursor-dot ${isHovered ? "hovered" : ""} ${
+        isTextHovered ? "text-hovered" : ""
+      }`}
+    ></div>
+  );
 };
 
 export default Cursor;
