@@ -76,3 +76,10 @@ body {
 .service-group:hover .service-group-icon {
   background-color: var(--color);
 }
+.service-group:hover .service-group-name {
+  color: var(--color);
+}
+.service-group:hover .service-group-desc {
+  color: white;
+}
+

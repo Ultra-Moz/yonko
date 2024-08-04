@@ -19,7 +19,7 @@ const Services = () => {
         <div className="flex items-start justify-start overflow-x-scroll hide-scroll gap-5">
           <Marquee
             pauseOnHover
-            speed={1}
+            speed={50}
             delay={0.5}
             className="cursor-pointer"
           >
@@ -31,7 +31,7 @@ const Services = () => {
                   style={{ "--color": service.color }}
                 >
                   <div
-                    className={`bg-borderColor flex justify-center items-center p-1 rounded-xl w-[48px] h-[48px] service-img-holder cursor-pointer  service-group-icon transition-all duration-300`}
+                    className={`bg-borderColor flex justify-center items-center p-1 rounded-xl w-[48px] h-[48px] service-img-holder cursor-pointer  service-group-icon transition-all duration-500`}
                   >
                     <service.image />
                   </div>
@@ -41,11 +41,11 @@ const Services = () => {
                     onMouseLeave={() => setIsTextHovered(false)}
                   >
                     <span
-                      className={`text-white font-semibold group-hover:text-[${service.color}]`}
+                      className="text-white font-semibold service-group-name transition-all duration-400"
                     >
                       {service.name}
                     </span>
-                    <p className="text-grayColor leading-[1.2] max-w-[180px]">
+                    <p className="text-grayColor service-group-desc leading-[1.2] max-w-[180px] transition-all duration-400">
                       {service.description}
                     </p>
                   </div>

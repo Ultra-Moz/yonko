@@ -8,10 +8,10 @@ const Deployments = () => {
 
   return (
     <div className="tile flex flex-col items-start justify-between self-start">
-      <h3 className="text-grayColor" onMouseEnter={() => setIsTextHovered(true)}
+      <h3 className="text-grayColor self-start" onMouseEnter={() => setIsTextHovered(true)}
         onMouseLeave={() => setIsTextHovered(false)}>Deployments</h3>
       <div className="flex flex-col gap-6">
-        <span className="text-5xl text-white font-bold" onMouseEnter={() => setIsTextHovered(true)}
+        <span className="text-5xl text-white font-bold self-start" onMouseEnter={() => setIsTextHovered(true)}
           onMouseLeave={() => setIsTextHovered(false)}>
           {homeData.deployments}
         </span>

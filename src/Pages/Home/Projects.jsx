@@ -14,7 +14,7 @@ const Projects = () => {
       >
         Projects:
       </h3>
-      <div className="mt-4 flex flex-col overflow-y-scroll hide-scroll items-start gap-6 max-h-[440px]">
+      <div className="mt-6 flex flex-col overflow-y-scroll hide-scroll items-start gap-6 max-h-[440px]">
         {homeData.projects.map((projectData, index) => {
           return (
             <div
