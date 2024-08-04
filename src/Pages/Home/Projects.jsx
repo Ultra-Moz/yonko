@@ -6,9 +6,9 @@ const Projects = () => {
   const { setIsHovered, setIsTextHovered } = useContext(HoverContext);
 
   return (
-    <div className="tile row-span-2">
+    <div className="tile row-span-2 flex flex-col">
       <h3
-        className="text-grayColor"
+        className="text-grayColor self-start"
         onMouseEnter={() => setIsTextHovered(true)}
         onMouseLeave={() => setIsTextHovered(false)}
       >

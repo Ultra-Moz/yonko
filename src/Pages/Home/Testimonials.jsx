@@ -20,7 +20,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-bgColor max-w-[680px] flex flex-col gap-8 w-full p-6 min-h-[260px] border-solid border-2 border-borderColor rounded-2xl col-span-2">
+    <div className="bg-bgColor max-w-[680px] flex flex-col gap-8 w-full p-6 h -[260px] border-solid border-2 border-borderColor rounded-2xl col-span-2">
       <h3
         className="text-grayColor self-start"
         onMouseEnter={() => setIsTextHovered(true)}
@@ -64,7 +64,7 @@ const Testimonials = () => {
                     {testimonial.title}
                   </span>
                   <p
-                    className={`italic text-sm max-w-[400px] ${
+                    className={`italic text-sm max-w-[420px] ${
                       activeIndex === index ? "text-white" : "text-grayColor"
                     }`}
                   >
