@@ -10,7 +10,7 @@ const Socials = () => {
   const [hoverSocial, setHoverSocial] = useState("")
 
   const handleClick = (name) => {
-    if (socialName === 'yonko_kd') {
+  if (socialName === 'yonko_kd' && name === 'discord') {
       setSocialName("")
     } else if (name === "discord") {
       setSocialName("yonko_kd");

@@ -9,7 +9,9 @@ const App = () => {
   return (
     <HoverProvider>
       <BackgroundLines/>  
+
       <Home />
+      
       <Cursor />
     </HoverProvider>
   );
