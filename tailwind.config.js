@@ -13,6 +13,7 @@ export default {
         bgColor: "#121212",
         orange: "#E93C00",
         green: "#28CD41",
+        blue:'#6A5ACD'
       },
     },
   },

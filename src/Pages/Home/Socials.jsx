@@ -39,7 +39,7 @@ const Socials = () => {
           {homeData.socials.map((social, index) => (
             social.link ? (
               <a key={index} href={social.link} target="_blank" rel="noopener noreferrer">
-                <div className="image-wrapper text-white hover:!bg-orange  transition-all duration-200 ease-in-out" onMouseEnter={() => setIsHovered(true)}
+                <div className="image-wrapper text-white hover:!bg-orange  transition-all duration-200 ease-in-out w-[48px] h-[48px]" onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)} >
                   <social.image />
                 </div>

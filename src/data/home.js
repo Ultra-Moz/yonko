@@ -33,31 +33,37 @@ const homeData = {
       name: "Medidrop",
       startDate: "July'24",
       endDate: "Current",
+      link:"#",
     },
     {
       name: "Skill24em",
       startDate: "Jun'24",
       endDate: "July'24",
+      link:"#",
     },
     {
       name: "Gigleaz Jobs",
       startDate: "May'24",
       endDate: "July'24",
+      link:"#",
     },
     {
       name: "She Cyber Hub",
       startDate: "May'24",
       endDate: "Jun'24",
+      link:"#",
     },
     {
       name: "She Cyber Hub - Dashboard",
       startDate: "May'24",
       endDate: "Jun'24",
+      link:"#",
     },
     {
       name: "Bhoomi",
       startDate: "April'24",
       endDate: "May'24",
+      link:"#",
     },
   ],
   services: [

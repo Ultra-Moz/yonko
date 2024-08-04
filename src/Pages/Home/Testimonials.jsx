@@ -14,7 +14,6 @@ const Testimonials = () => {
   );
 
   const handleSlideChange = (splide) => {
-    console.log(splide.index);
     setActiveIndex(splide.index);
     setPersonName(homeData.testimonials[splide.index]?.name || "");
   };
