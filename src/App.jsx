@@ -8,7 +8,7 @@ const App = () => {
 
   return (
     <HoverProvider>
-      <BackgroundLines/>  
+      {/* <BackgroundLines/>   */}
 
       <Home />
       

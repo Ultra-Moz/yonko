@@ -16,7 +16,7 @@ body {
   background-color: black;
   padding: 80px 12px;
   height: 100%;
-  overflow-x: hidden;
+  /* overflow-x:hidden */
 }
 .cursor-dot {
   width: 20px;
@@ -115,24 +115,50 @@ body {
 }
 @keyframes moveLeft {
   0% {
-    right: 0;
+      right: 0;
   }
   30% {
-    right: 100%;
+      right: 100%;
   }
   100% {
-    right: 100%;
+      right: 100%;
   }
 }
 
 @keyframes moveRight {
   0% {
-    left: 0;
+      left: 0;
   }
   30% {
-    left: 100%;
+      left: 100%;
   }
   100% {
-    left: 100%;
+      left: 100%;
   }
+}
+
+.home:after {
+  content: "";
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+  height: 300%;
+  width: 300%;
+  position: fixed;
+  top: -100%;
+  left: -100%;
+  opacity: 0.03;
+  animation: animateGrain 8s steps(10) infinite;
+  pointer-events: none;
+}
+
+@keyframes animateGrain {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-3%, -5%); }
+  20% { transform: translate(5%, -3%); }
+  30% { transform: translate(-7%, 2%); }
+  40% { transform: translate(3%, 5%); }
+  50% { transform: translate(-5%, -3%); }
+  60% { transform: translate(7%, -5%); }
+  70% { transform: translate(-3%, 7%); }
+  80% { transform: translate(5%, -7%); }
+  90% { transform: translate(-7%, 3%); }
 }

@@ -11,7 +11,7 @@ import Testimonials from "./Testimonials";
 
 const Home = () => {
   return (
-    <div className="w-full flex justify-center h-full">
+    <div className="w-full flex justify-center h-full home">
       <div className="container grid grid-cols-3 grid-row-5 relative gap-6 h-full">
         
         <NameSection />
