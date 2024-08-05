@@ -14,6 +14,8 @@ const Testimonials = () => {
   );
 
   const handleSlideChange = (splide) => {
+    console.log(splide.index);
+
     setActiveIndex(splide.index);
     setPersonName(homeData.testimonials[splide.index]?.name || "");
   };
@@ -37,7 +39,7 @@ const Testimonials = () => {
             perPage: 1,
             gap: "1rem",
             arrows: false,
-            autoplay: true,
+            // autoplay: true,
             interval: 4000,
             speed: 1000,
           }}
@@ -46,7 +48,12 @@ const Testimonials = () => {
         >
           <SplideTrack>
             {homeData.testimonials.map((testimonial, index) => (
-              <SplideSlide key={index}>
+              <SplideSlide
+                key={index}
+                className={
+                  activeIndex === index ? "text-white" : "text-grayColor"
+                }
+              >
                 <div className="flex flex-col gap-2 w-full">
                   <img
                     src={testimonial.image}
@@ -55,18 +62,8 @@ const Testimonials = () => {
                       activeIndex === index ? "" : "opacity-60"
                     }`}
                   />
-                  <span
-                    className={`font-semibold ${
-                      activeIndex === index ? "text-white" : "text-grayColor"
-                    }`}
-                  >
-                    {testimonial.title}
-                  </span>
-                  <p
-                    className={`italic text-sm max-w-[420px] ${
-                      activeIndex === index ? "text-white" : "text-grayColor"
-                    }`}
-                  >
+                  <span className={`font-semibold`}>{testimonial.title}</span>
+                  <p className={`italic text-sm max-w-[420px]`}>
                     {testimonial.review}
                   </p>
                 </div>

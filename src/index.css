@@ -76,6 +76,10 @@ body {
   overflow: visible !important;
 }
 
+.splide__slide--clone {
+  color: #969696 !important;
+}
+
 .service-group:hover .service-group-icon {
   background-color: var(--color);
 }
@@ -88,49 +92,47 @@ body {
 
 @keyframes moveUp {
   0% {
-      bottom: 0;
+    bottom: 0;
   }
   30% {
-      bottom: 100%;
+    bottom: 100%;
   }
   100% {
-      bottom: 100%;
+    bottom: 100%;
   }
 }
 
 @keyframes moveDown {
   0% {
-      top: 0;
+    top: 0;
   }
   30% {
-      top: 100%;
+    top: 100%;
   }
   100% {
-      top: 100%;
+    top: 100%;
   }
 }
 @keyframes moveLeft {
   0% {
-      right: 0;
+    right: 0;
   }
   30% {
-      right: 100%;
+    right: 100%;
   }
   100% {
-      right: 100%;
+    right: 100%;
   }
 }
 
 @keyframes moveRight {
   0% {
-      left: 0;
+    left: 0;
   }
   30% {
-      left: 100%;
+    left: 100%;
   }
   100% {
-      left: 100%;
+    left: 100%;
   }
 }
-
-
