@@ -39,7 +39,7 @@ const Testimonials = () => {
             perPage: 1,
             gap: "1rem",
             arrows: false,
-            // autoplay: true,
+            autoplay: true,
             interval: 4000,
             speed: 1000,
           }}
