@@ -21,7 +21,7 @@ const BackgroundLines = () => {
           <div className="bg-gradient-to-b from-transparent to-green absolute w-0.5 h-[200px] animate-[moveDown_7s_linear_infinite]"></div>
         </div>
       </div>
-      <div className="absolute flex flex-col w-full h-full -z-10 ">
+      <div className="left-0 overflow-x-clip absolute flex flex-col w-full h-full -z-10 ">
         <div className="h-0.5 w-full bg-[#1e1e1e70]"></div>
         <div className="">
           <div className="h-0.5 w-full bg-[#1e1e1e70] absolute top-[258px]"></div>
