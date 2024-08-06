@@ -18,6 +18,7 @@ body {
   min-height: 100%;
   overflow-x: hidden;
 }
+
 .cursor-dot {
   width: 20px;
   height: 20px;
@@ -35,6 +36,7 @@ body {
 .cursor-dot.hovered {
   opacity: 0;
 }
+
 .cursor-dot.text-hovered {
   width: 3px;
   height: 40px;
@@ -46,12 +48,15 @@ body {
 .container {
   max-width: 1030px;
 }
+
 .tile {
   @apply bg-bgColor p-6 max-w-[330px] min-h-[260px] border-solid border-2 border-borderColor rounded-2xl;
 }
+
 .hide-scroll::-webkit-scrollbar {
   display: none;
 }
+
 .hide-scroll {
   -ms-overflow-style: none;
   scrollbar-width: none;
@@ -72,6 +77,7 @@ body {
   background-color: white;
   transition: all 0.3s ease;
 }
+
 #splide01-track {
   overflow: visible !important;
 }
@@ -83,9 +89,11 @@ body {
 .service-group:hover .service-group-icon {
   background-color: var(--color);
 }
+
 .service-group:hover .service-group-name {
   color: var(--color);
 }
+
 .service-group:hover .service-group-desc {
   color: white;
 }
@@ -94,9 +102,11 @@ body {
   0% {
     bottom: 0;
   }
+
   30% {
     bottom: 100%;
   }
+
   100% {
     bottom: 100%;
   }
@@ -106,34 +116,41 @@ body {
   0% {
     top: 0;
   }
+
   30% {
     top: 100%;
   }
+
   100% {
     top: 100%;
   }
 }
+
 @keyframes moveLeft {
   0% {
-    transform: translateX(0);
+    right: 0%;
   }
+
   30% {
-    transform: translateX(100%);
+    right: 100%;
   }
+
   100% {
-    transform: translateX(100%);
+    right: 100%;
   }
 }
 
 @keyframes moveRight {
   0% {
-    transform: translateX(100%);
+    left: 0%;
   }
+
   30% {
-    transform: translateX(0);
+    left:100%;
   }
+
   100% {
-    transform: translateX(0);
+    left:100%;
   }
 }
 
@@ -152,22 +169,28 @@ body {
 }
 
 @keyframes animateGrain {
+
   0%,
   100% {
     transform: translate(0, 0);
   }
+
   16% {
     transform: translate(-3%, -5%);
   }
+
   33% {
     transform: translate(5%, -3%);
   }
+
   50% {
     transform: translate(-7%, 2%);
   }
+
   66% {
     transform: translate(3%, 5%);
   }
+
   83% {
     transform: translate(-5%, -3%);
   }
