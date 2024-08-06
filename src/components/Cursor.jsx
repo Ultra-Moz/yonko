@@ -30,7 +30,7 @@ const Cursor = () => {
     <div
       className={`cursor-dot ${isHovered ? "hovered" : ""} ${
         isTextHovered ? "text-hovered" : ""
-      }`}
+      } hidden md:block`}
     ></div>
   );
 };

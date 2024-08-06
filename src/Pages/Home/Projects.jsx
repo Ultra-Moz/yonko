@@ -7,26 +7,25 @@ const Projects = () => {
   const [hoverIndex, setHoverIndex] = useState(null)
 
   return (
-    <div className="tile row-span-2 flex flex-col">
+    <div className="bg-bgColor p-3 sm:p-6 h-[408px] sm:h-full border-solid border-2 border-borderColor rounded-2xl row-span-2 flex flex-col w-full">
       <h3
-        className="text-grayColor self-start"
+        className="text-grayColor self-start text-[14px] sm:text-base"
         onMouseEnter={() => setIsTextHovered(true)}
         onMouseLeave={() => setIsTextHovered(false)}
       >
         Projects:
       </h3>
-      <div className="mt-8 flex flex-col overflow-y-scroll hide-scroll items-start gap-6 max-h-[440px]">
+      <div className="mt-5 sm:mt-8 flex flex-col overflow-y-scroll hide-scroll items-start gap-4 xs:gap-5 sm:gap-6 max-h-[440px]">
         {homeData.projects.map((projectData, index) => {
           return (
             <div
               key={index}
-              className="pr-5"
             >
-              <div className="flex items-center gap-3">
-                <div className="text-grayColor font-medium flex items-center justify-center px-2 py-[2px] bg-borderColor rounded-lg">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="text-grayColor font-medium flex items-center justify-center text-[12px] xs:text-[14px] sm:text-base px-1 sm:px-2 py-[1px] sm:py-[2px] bg-borderColor rounded-lg">
                   {index + 1}
                 </div>
-                <a href={projectData.link} className={`${(isHovered && hoverIndex === index) ? 'text-orange' : 'text-white'} transition-all duration-300 ease-in-out`} onMouseEnter={() => {
+                <a href={projectData.link} className={`${(isHovered && hoverIndex === index) ? 'text-orange' : 'text-white'} transition-all duration-300 ease-in-out text-[12px] xs:text-[14px] sm:text-base`} onMouseEnter={() => {
                   setHoverIndex(index)
                   setIsHovered(true)
                 }
@@ -36,7 +35,7 @@ const Projects = () => {
                     setIsHovered(false)
                   }}>{projectData.name}</a>
               </div>
-              <span className="mt-4 text-grayColor font-medium" onMouseEnter={() => setIsTextHovered(true)}
+              <span className="mt-4 text-grayColor font-medium text-[12px] xs:text-[14px] sm:text-base" onMouseEnter={() => setIsTextHovered(true)}
                 onMouseLeave={() => setIsTextHovered(false)}>
                 {projectData.startDate} • {projectData.endDate}
               </span>

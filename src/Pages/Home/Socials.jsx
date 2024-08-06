@@ -27,7 +27,7 @@ const Socials = () => {
   }
 
   return (
-    <div className="tile flex flex-col items-start justify-between">
+    <div className="tile flex flex-col items-start justify-between col-span-2 md:col-span-1">
       <h3 className="text-grayColor" onMouseEnter={() => setIsTextHovered(true)}
         onMouseLeave={() => setIsTextHovered(false)}>Socials:</h3>
       <div className="flex flex-col gap-6 w-full">

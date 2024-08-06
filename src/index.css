@@ -13,7 +13,7 @@
 }
 
 body {
-  @apply bg-black py-6 xs:py-20 px-6 min-h-full;
+  @apply bg-black py-6 sm:py-20 px-3 sm:px-6 min-h-full;
 }
 
 .cursor-dot {
@@ -47,7 +47,7 @@ body {
 }
 
 .tile {
-  @apply bg-bgColor p-6 w-full min-h-[260px] border-solid border-2 border-borderColor rounded-2xl;
+  @apply bg-bgColor p-3 sm:p-6 w-full h-[200px] sm:min-h-[260px] border-solid border-2 border-borderColor rounded-2xl;
 }
 
 .hide-scroll::-webkit-scrollbar {

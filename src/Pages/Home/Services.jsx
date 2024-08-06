@@ -7,7 +7,7 @@ const Services = () => {
   const { setIsHovered, setIsTextHovered } = useContext(HoverContext);
 
   return (
-    <div className="bg-bgColor p-6 w-full min-h-[260px] border-solid border-2 border-borderColor rounded-2xl flex flex-col justify-between col-span-3">
+    <div className="bg-bgColor p-6 w-full min-h-[260px] border-solid border-2 border-borderColor rounded-2xl flex flex-col justify-between col-span-2 md:col-span-3">
       <h3
         className="text-grayColor self-start"
         onMouseEnter={() => setIsTextHovered(true)}

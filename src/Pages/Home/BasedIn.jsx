@@ -39,7 +39,7 @@ const BasedIn = () => {
   const [seconds, period] = secondsWithPeriod.split(" ");
 
   return (
-    <div className="tile flex flex-col justify-between">
+    <div className="tile flex flex-col justify-between w-full">
       <h3
         className="text-grayColor self-start"
         onMouseEnter={() => setIsTextHovered(true)}
@@ -50,7 +50,7 @@ const BasedIn = () => {
       <div className="flex justify-between">
         <div className="flex flex-col">
           <span
-            className="text-white font-semibold"
+            className="text-white font-semibold text-[14px] lg:text-base"
             onMouseEnter={() => setIsTextHovered(true)}
             onMouseLeave={() => setIsTextHovered(false)}
           >
@@ -64,7 +64,7 @@ const BasedIn = () => {
             {formatDate(time)}
           </span>
           <span
-            className="text-white mt-6"
+            className="text-white mt-6 text-[14px] lg:text-base"
             onMouseEnter={() => setIsTextHovered(true)}
             onMouseLeave={() => setIsTextHovered(false)}
           >
