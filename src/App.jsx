@@ -8,8 +8,6 @@ const App = () => {
   const { setIsTextHovered } = useContext(HoverContext);
   return (
     <>
-      <BackgroundLines />
-
       <Home />
       <div className="text-grayColor flex flex-col items-center mt-12 -mb-14">
         <h3

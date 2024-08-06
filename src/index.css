@@ -13,10 +13,7 @@
 }
 
 body {
-  background-color: black;
-  padding: 80px 12px;
-  min-height: 100%;
-  overflow-x: hidden;
+  @apply bg-black py-6 xs:py-20 px-6 min-h-full;
 }
 .cursor-dot {
   width: 20px;
@@ -43,11 +40,11 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-.container {
+.wrapper {
   max-width: 1030px;
 }
 .tile {
-  @apply bg-bgColor p-6 max-w-[330px] min-h-[260px] border-solid border-2 border-borderColor rounded-2xl;
+  @apply bg-bgColor p-6 w-full min-h-[260px] border-solid border-2 border-borderColor rounded-2xl;
 }
 .hide-scroll::-webkit-scrollbar {
   display: none;
@@ -115,25 +112,25 @@ body {
 }
 @keyframes moveLeft {
   0% {
-    transform: translateX(0);
+    right: 0%;
   }
   30% {
-    transform: translateX(100%);
+    right: 100%;
   }
   100% {
-    transform: translateX(100%);
+    right: 100%;
   }
 }
 
 @keyframes moveRight {
   0% {
-    transform: translateX(100%);
+    left: 0%;
   }
   30% {
-    transform: translateX(0);
+    left: 100%;
   }
   100% {
-    transform: translateX(0);
+    left: 100%;
   }
 }
 
@@ -146,7 +143,7 @@ body {
   position: fixed;
   top: -100%;
   left: -100%;
-  opacity: 0.03;
+  opacity: 0.025;
   animation: animateGrain 8s steps(10) infinite;
   pointer-events: none;
 }
