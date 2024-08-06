@@ -6,6 +6,7 @@ const BackgroundLines = () => {
       <div className="fixed inset-y-0 w-full h-full wrapper flex justify-between -z-10 left-[50%] -translate-x-1/2">
         <div className="h-full w-0.5 bg-[#1e1e1e50]"></div>
         <div>
+          74cb3945dce00974d0db4ecc483834994012b2fe
           <div className="h-full w-0.5 bg-[#1e1e1e50] absolute left-[325px]">
             <div className="bg-gradient-to-t from-transparent to-green absolute w-0.5 h-[200px] animate-[moveUp_7s_linear_infinite]"></div>
           </div>
