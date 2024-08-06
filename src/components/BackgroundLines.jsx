@@ -3,7 +3,7 @@ import React from "react";
 const BackgroundLines = () => {
   return (
     <>
-      <div className="fixed inset-0 w-full h-full container flex justify-between -z-10 left-[50%] top-[50%] -translate-x-1/2 -translate-y-1/2 ">
+      <div className="fixed inset-y-0 w-full h-full container flex justify-between -z-10 left-[50%] -translate-x-1/2 bg-grayColor">
         <div className="h-full w-0.5 bg-[#1e1e1e70]"></div>
         <div>
           <div className="h-full w-0.5 bg-[#1e1e1e70] absolute left-[325px]">
