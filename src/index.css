@@ -94,7 +94,13 @@ body {
 .service-group:hover .service-group-desc {
   color: white;
 }
+.rfm-marquee {
+  align-items: start !important;
+}
 
+.rfm-initial-child-container {
+  align-items: start !important;
+}
 @keyframes moveUp {
   0% {
     bottom: 0;

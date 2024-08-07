@@ -16,9 +16,9 @@ const Home = () => {
       <BackgroundLines />
       <div className="wrapper w-full grid grid-cols-2 md:grid-cols-3 grid-row-7 xs:grid-row-5 relative gap-2 sm:gap-6 h-full">
         <NameSection />
-        <Deck />
+        <Deployments />
         <Projects />
-        <Deployments /> 
+        <Deck />
         <CurrentWorking />
         <BasedIn />
         <Services />

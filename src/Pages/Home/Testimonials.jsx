@@ -21,9 +21,9 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-bgColor flex flex-col gap-8 w-full p-6 h -[260px] border-solid border-2 border-borderColor rounded-2xl col-span-2">
+    <div className="bg-bgColor flex flex-col gap-3 xs:gap-6 sm:gap-8 w-full p-3 sm:p-6 h-[200px] sm:h-[260px] border-solid border-2 border-borderColor rounded-2xl col-span-2">
       <h3
-        className="text-grayColor self-start"
+        className="text-grayColor self-start text-[14px] sm:text-base"
         onMouseEnter={() => setIsTextHovered(true)}
         onMouseLeave={() => setIsTextHovered(false)}
       >
@@ -44,7 +44,7 @@ const Testimonials = () => {
             speed: 1000,
           }}
           onMove={(splide) => handleSlideChange(splide)}
-          className="select-none cursor-pointer w-[70%] !overflow-visible"
+          className="select-none cursor-pointer w-full sm:w-[70%] md:w-full lg:w-[70%] !overflow-visible"
         >
           <SplideTrack>
             {homeData.testimonials.map((testimonial, index) => (
@@ -58,12 +58,16 @@ const Testimonials = () => {
                   <img
                     src={testimonial.image}
                     alt="person"
-                    className={`w-[48px] rounded-xl ${
+                    className={`w-[38px] sm:w-[48px] rounded-xl ${
                       activeIndex === index ? "" : "opacity-60"
                     }`}
                   />
-                  <span className={`font-semibold`}>{testimonial.title}</span>
-                  <p className={`italic text-sm max-w-[420px]`}>
+                  <span className={`font-semibold text-sm sm:text-base`}>
+                    {testimonial.title}
+                  </span>
+                  <p
+                    className={`italic  sm:max-w-[420px] text-[10px] xs:text-[12px] sm:text-[14px]`}
+                  >
                     {testimonial.review}
                   </p>
                 </div>

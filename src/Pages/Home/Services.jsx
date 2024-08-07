@@ -7,16 +7,16 @@ const Services = () => {
   const { setIsHovered, setIsTextHovered } = useContext(HoverContext);
 
   return (
-    <div className="bg-bgColor p-6 w-full min-h-[260px] border-solid border-2 border-borderColor rounded-2xl flex flex-col justify-between col-span-2 md:col-span-3">
+    <div className="bg-bgColor p-3 sm:p-6 w-full h-[200px] sm:min-h-[260px] border-solid border-2 border-borderColor rounded-2xl flex flex-col justify-between col-span-2 md:col-span-3">
       <h3
-        className="text-grayColor self-start"
+        className="text-grayColor self-start text-[14px] sm:text-base"
         onMouseEnter={() => setIsTextHovered(true)}
         onMouseLeave={() => setIsTextHovered(false)}
       >
         Services:
       </h3>
       <div>
-        <div className="flex items-start justify-start overflow-x-scroll hide-scroll gap-5">
+        <div className="flex overflow-x-scroll hide-scroll">
           <Marquee
             pauseOnHover
             speed={50}
@@ -27,11 +27,11 @@ const Services = () => {
               return (
                 <div
                   key={index}
-                  className="flex flex-col items-start gap-4 service-group group"
+                  className="flex flex-col items-start gap-4 service-group group mr-5 h-full"
                   style={{ "--color": service.color }}
                 >
                   <div
-                    className={`bg-borderColor flex justify-center items-center p-1 rounded-xl w-[48px] h-[48px] service-img-holder cursor-pointer  service-group-icon transition-all duration-500`}
+                    className={`bg-borderColor flex justify-center items-center p-1 rounded-xl w-[38px] sm:w-[48px] h-[38px] sm:h-[48px] aspect-square service-img-holder cursor-pointer  service-group-icon transition-all duration-500`}
                   >
                     <service.image />
                   </div>
@@ -40,12 +40,10 @@ const Services = () => {
                     onMouseEnter={() => setIsTextHovered(true)}
                     onMouseLeave={() => setIsTextHovered(false)}
                   >
-                    <span
-                      className="text-white font-semibold service-group-name transition-all duration-400"
-                    >
+                    <span className="text-white font-semibold service-group-name transition-all duration-400 text-[14px] md:text-base">
                       {service.name}
                     </span>
-                    <p className="text-grayColor service-group-desc leading-[1.2] max-w-[180px] transition-all duration-400">
+                    <p className="text-grayColor service-group-desc leading-[1.2] max-w-[180px] tracking-wide transition-all duration-400 text-[14px] md:text-base">
                       {service.description}
                     </p>
                   </div>

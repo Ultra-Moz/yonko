@@ -39,9 +39,9 @@ const BasedIn = () => {
   const [seconds, period] = secondsWithPeriod.split(" ");
 
   return (
-    <div className="tile flex flex-col justify-between w-full">
+    <div className="tile flex flex-col justify-between w-full col-span-2 xs:col-span-1">
       <h3
-        className="text-grayColor self-start"
+        className="text-grayColor self-start text-[14px] sm:text-base"
         onMouseEnter={() => setIsTextHovered(true)}
         onMouseLeave={() => setIsTextHovered(false)}
       >
@@ -57,14 +57,14 @@ const BasedIn = () => {
             Hyd, IND <span className="text-orange">•</span> IST
           </span>
           <span
-            className="text-grayColor"
+            className="text-grayColor text-[14px] sm:text-base"
             onMouseEnter={() => setIsTextHovered(true)}
             onMouseLeave={() => setIsTextHovered(false)}
           >
             {formatDate(time)}
           </span>
           <span
-            className="text-white mt-6 text-[14px] lg:text-base"
+            className="text-white mt-6 text-[12px] md:text-[14px] lg:text-base"
             onMouseEnter={() => setIsTextHovered(true)}
             onMouseLeave={() => setIsTextHovered(false)}
           >
@@ -72,7 +72,11 @@ const BasedIn = () => {
             {period}
           </span>
         </div>
-        <img src="/images/map.svg" alt="Telengana state map" />
+        <img
+          src="/images/map.svg"
+          alt="Telengana state map"
+          className="w-[100px] xs:w-[80px] md:w-[114px]"
+        />
       </div>
     </div>
   );
