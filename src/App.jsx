@@ -9,7 +9,8 @@ const App = () => {
   return (
     <>
       <Home />
-      <div className="text-grayColor flex flex-col items-center mt-12 -mb-14">
+
+      <div className="text-grayColor flex flex-col items-center text-[12px] md:text-[14px] lg:text-base mt-4">
         <h3
           onMouseEnter={() => setIsTextHovered(true)}
           onMouseLeave={() => setIsTextHovered(false)}

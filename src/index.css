@@ -13,7 +13,7 @@
 }
 
 body {
-  @apply bg-black py-6 sm:py-20 px-3 sm:px-6 min-h-full;
+  @apply bg-black py-6 sm:py-20 min-h-full;
 }
 
 .cursor-dot {
@@ -60,7 +60,6 @@ body {
 }
 
 .image-wrapper {
-  width: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,6 +67,7 @@ body {
   background-color: #1f1f1f;
   border-radius: 1rem;
   cursor: pointer;
+  @apply w-[42px] sm:w-[46px] md:w-[40px] lg:w-[48px] h-[42px] sm:h-[46px] md:h-[40px] lg:h-[48px];
 }
 
 .image-wrapper:hover {
@@ -103,7 +103,7 @@ body {
 }
 @keyframes moveUp {
   0% {
-    bottom: 0;
+    bottom: 0%;
   }
 
   30% {
@@ -117,7 +117,7 @@ body {
 
 @keyframes moveDown {
   0% {
-    top: 0;
+    top: 0%;
   }
 
   30% {
