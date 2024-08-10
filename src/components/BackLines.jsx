@@ -23,7 +23,7 @@ const BackLines = () => {
           </div>
         </div>
       </div>
-      <div className="min-h-screen w-screen grid grid-row-7 gap-2 sm:gap-6 absolute overflow-x-hidden">
+      <div className="min-h-screen w-full grid grid-row-7 gap-2 sm:gap-6 absolute overflow-x-hidden">
         <div className="w-full h-[200px] sm:h-[260px] relative">
           <div className="bg-[#1e1e1e50] w-full h-0.5"></div>
           <div className="bg-[#1e1e1e50] w-full h-0.5 absolute bottom-0"></div>

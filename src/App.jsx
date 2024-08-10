@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import Home from "./Pages/Home/index";
 import { HoverProvider, HoverContext } from "./HoverContext";
 import Cursor from "./components/Cursor";
-import BackgroundLines from "./components/BackgroundLines";
 
 const App = () => {
   const { setIsTextHovered } = useContext(HoverContext);
